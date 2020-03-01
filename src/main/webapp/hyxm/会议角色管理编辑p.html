@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="../css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+<link href="../css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
+<link href="../css/animate.min.css" rel="stylesheet">
+<link href="../css/layout.css?v=1.0.0" rel="stylesheet">
+<link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
+<link href="../css/plugins/jsTree/style.min.css" rel="stylesheet"></head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="location clearfix">
+    <p class="pull-left"><i class="fa fa-map-marker"></i> 会议角色管理编辑</p>
+   
+  </div>
+  <!--location end-->
+  
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="ibox float-e-margins new_add_box">
+        <div class="ibox-content clearfix">
+          <div class="col-sm-10 col-sm-offset-1 mt20">
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>会议：</label>
+              <div class="col-sm-6 pt6">
+			   <input type="test" class="form-control" name="title"  value="中青旅2014年学术大会 ">
+			 
+              </div>
+            </div><!--form-group end-->
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>角色名称：</label>
+              <div class="col-sm-6">
+               <input type="test" class="form-control" name="password"  value=" ">
+              </div>
+            </div><!--form-group end-->
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label">角色说明：</label>
+              <div class="col-sm-6">
+                <input type="test" class="form-control" name="password"  value=" ">
+              </div>
+            </div><!--form-group end-->
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label">权限设置：</label>
+              <div class="col-sm-10">
+               
+                <div class="role_box">
+                  <h4>
+                    <input type="checkbox" id="checkbox111" class="che-t" value="01">
+                    会议系统权限</h4>
+                  <div class="add_role_box">
+                    <div class="add-role-tit">
+                      <input type="checkbox" id="checkbox0" class="che-t" value="01">
+                      <label for="checkbox0">会议系统管理</label>
+                    </div>
+                    <ul class="clearfix">
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0102" class="che-li" value="0102">
+                        <label for="0102">会议配置流程</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0103" class="che-li" value="0103">
+                        <label for="0103">基础信息配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0104" class="che-li" value="0104">
+                        <label for="0104">模版及语言配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0105" class="che-li" value="0105">
+                        <label for="0105">参会类型及VIP配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0107" class="che-li" value="0107">
+                        <label for="0107">表单配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0108" class="che-li" value="0108">
+                        <label for="0108">资源预定配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0109" class="che-li" value="0109">
+                        <label for="0109">支付配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0110" class="che-li" value="0110">
+                        <label for="0110">学术配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0112" class="che-li" value="0112">
+                        <label for="0112">发布配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0126" class="che-li" value="0126">
+                        <label for="0126">字典管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0106" class="che-li" value="0106">
+                        <label for="0106">国际化管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0127" class="che-li" value="0127">
+                        <label for="0127">动态表单管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0129" class="che-li" value="0129">
+                        <label for="0129">业务编码管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0132" class="che-li" value="0132">
+                        <label for="0132">消息模版管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0133" class="che-li" value="0133">
+                        <label for="0133">界面主题管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0134" class="che-li" value="0134">
+                        <label for="0134">业务模块管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0135" class="che-li" value="0135">
+                        <label for="0135">消息服务配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0136" class="che-li" value="0136">
+                        <label for="0136">列表显示配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0137" class="che-li" value="0137">
+                        <label for="0137">动态关联配置</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--add_role_box end--> 
+                  
+                  
+<div class="add_role_box">
+                    <div class="add-role-tit">
+                      <input type="checkbox" id="checkbox0" class="che-t" value="01">
+                      <label for="checkbox0">会议系统管理</label>
+                    </div>
+                    <ul class="clearfix">
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0102" class="che-li" value="0102">
+                        <label for="0102">会议配置流程</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0103" class="che-li" value="0103">
+                        <label for="0103">基础信息配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0104" class="che-li" value="0104">
+                        <label for="0104">模版及语言配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0105" class="che-li" value="0105">
+                        <label for="0105">参会类型及VIP配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0107" class="che-li" value="0107">
+                        <label for="0107">表单配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0108" class="che-li" value="0108">
+                        <label for="0108">资源预定配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0109" class="che-li" value="0109">
+                        <label for="0109">支付配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0110" class="che-li" value="0110">
+                        <label for="0110">学术配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0112" class="che-li" value="0112">
+                        <label for="0112">发布配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0126" class="che-li" value="0126">
+                        <label for="0126">字典管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0106" class="che-li" value="0106">
+                        <label for="0106">国际化管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0127" class="che-li" value="0127">
+                        <label for="0127">动态表单管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0129" class="che-li" value="0129">
+                        <label for="0129">业务编码管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0132" class="che-li" value="0132">
+                        <label for="0132">消息模版管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0133" class="che-li" value="0133">
+                        <label for="0133">界面主题管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0134" class="che-li" value="0134">
+                        <label for="0134">业务模块管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0135" class="che-li" value="0135">
+                        <label for="0135">消息服务配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0136" class="che-li" value="0136">
+                        <label for="0136">列表显示配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0137" class="che-li" value="0137">
+                        <label for="0137">动态关联配置</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--add_role_box end-->                   
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+                <!--role_box end-->
+                
+
+
+
+<div class="role_box">
+                  <h4>
+                    <input type="checkbox" id="checkbox111" class="che-t" value="01">
+                    会议系统权限</h4>
+                  <div class="add_role_box">
+                    <div class="add-role-tit">
+                      <input type="checkbox" id="checkbox0" class="che-t" value="01">
+                      <label for="checkbox0">会议系统管理</label>
+                    </div>
+                    <ul class="clearfix">
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0102" class="che-li" value="0102">
+                        <label for="0102">会议配置流程</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0103" class="che-li" value="0103">
+                        <label for="0103">基础信息配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0104" class="che-li" value="0104">
+                        <label for="0104">模版及语言配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0105" class="che-li" value="0105">
+                        <label for="0105">参会类型及VIP配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0107" class="che-li" value="0107">
+                        <label for="0107">表单配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0108" class="che-li" value="0108">
+                        <label for="0108">资源预定配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0109" class="che-li" value="0109">
+                        <label for="0109">支付配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0110" class="che-li" value="0110">
+                        <label for="0110">学术配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0112" class="che-li" value="0112">
+                        <label for="0112">发布配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0126" class="che-li" value="0126">
+                        <label for="0126">字典管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0106" class="che-li" value="0106">
+                        <label for="0106">国际化管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0127" class="che-li" value="0127">
+                        <label for="0127">动态表单管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0129" class="che-li" value="0129">
+                        <label for="0129">业务编码管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0132" class="che-li" value="0132">
+                        <label for="0132">消息模版管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0133" class="che-li" value="0133">
+                        <label for="0133">界面主题管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0134" class="che-li" value="0134">
+                        <label for="0134">业务模块管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0135" class="che-li" value="0135">
+                        <label for="0135">消息服务配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0136" class="che-li" value="0136">
+                        <label for="0136">列表显示配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0137" class="che-li" value="0137">
+                        <label for="0137">动态关联配置</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--add_role_box end--> 
+                  
+                  
+<div class="add_role_box">
+                    <div class="add-role-tit">
+                      <input type="checkbox" id="checkbox0" class="che-t" value="01">
+                      <label for="checkbox0">会议系统管理</label>
+                    </div>
+                    <ul class="clearfix">
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0102" class="che-li" value="0102">
+                        <label for="0102">会议配置流程</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0103" class="che-li" value="0103">
+                        <label for="0103">基础信息配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0104" class="che-li" value="0104">
+                        <label for="0104">模版及语言配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0105" class="che-li" value="0105">
+                        <label for="0105">参会类型及VIP配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0107" class="che-li" value="0107">
+                        <label for="0107">表单配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0108" class="che-li" value="0108">
+                        <label for="0108">资源预定配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0109" class="che-li" value="0109">
+                        <label for="0109">支付配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0110" class="che-li" value="0110">
+                        <label for="0110">学术配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0112" class="che-li" value="0112">
+                        <label for="0112">发布配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0126" class="che-li" value="0126">
+                        <label for="0126">字典管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0106" class="che-li" value="0106">
+                        <label for="0106">国际化管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0127" class="che-li" value="0127">
+                        <label for="0127">动态表单管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0129" class="che-li" value="0129">
+                        <label for="0129">业务编码管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0132" class="che-li" value="0132">
+                        <label for="0132">消息模版管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0133" class="che-li" value="0133">
+                        <label for="0133">界面主题管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0134" class="che-li" value="0134">
+                        <label for="0134">业务模块管理</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0135" class="che-li" value="0135">
+                        <label for="0135">消息服务配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0136" class="che-li" value="0136">
+                        <label for="0136">列表显示配置</label>
+                      </li>
+                      <li class="menu_li">
+                        <input type="checkbox" name="priv" id="0137" class="che-li" value="0137">
+                        <label for="0137">动态关联配置</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--add_role_box end-->                   
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+                <!--role_box end-->
+
+
+
+
+               
+               
+               
+               
+               
+              </div>
+            </div><!--form-group end-->
+
+          
+ 
+ 
+          </div>
+         
+         <div class="col-sm-10 col-sm-offset-1 mt40">
+                           <label class="col-sm-2">&nbsp;</label>
+              <div class="col-sm-6">
+               <button class="btn btn-primary" type="submit" onClick="javascript:window.location.href='会议配置管理.html'">&nbsp;&nbsp;&nbsp;确定&nbsp;&nbsp;&nbsp;</button>
+                                    <button class="btn btn-white" type="submit" onClick="javascript:window.location.href='会议配置管理.html'">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+              </div>        
+                                </div>
+         
+         
+      
+        </div>
+      </div>
+      <!--ibox end-->
+      
+ 
+      
+    </div>
+    <!--col-sm-12 end--> 
+    
+  </div>
+  <!--row end--> 
+</div>
+<!--wrapper end--> 
+
+ 
+<script src="../js/jquery.min.js?v=2.1.4"></script> 
+<script src="../js/bootstrap.min.js?v=3.3.5"></script> 
+<script src="../js/plugins/iCheck/icheck.min.js"></script>
+<script src="../js/hplus.min.js"></script> 
+    <script src="../js/plugins/jsTree/jstree.min.js"></script>
+    <style>
+        .jstree-open>.jstree-anchor>.fa-folder:before{content:"\f07c"}.jstree-default .jstree-icon.none{width:0}
+		.jstree li{ list-style:none}
+    </style>
+ 
+
+</body>
+</html>

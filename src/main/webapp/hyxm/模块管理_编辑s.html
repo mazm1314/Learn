@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="../css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+<link href="../css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
+<link href="../css/animate.min.css" rel="stylesheet">
+<link href="../css/layout.css?v=1.0.0" rel="stylesheet">
+<link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
+<link href="../css/plugins/dataTables/jquery.dataTables.css" rel="stylesheet">
+<link href="../css/plugins/datapicker/jquery.datetimepicker.css" rel="stylesheet">
+<link href="../css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="location clearfix">
+    <p class="pull-left"><i class="fa fa-map-marker"></i> 修改模块管理</p>
+     </div>
+     <!--location end-->
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="ibox float-e-margins new_add_box">
+        <div class="ibox-content clearfix">
+          <div class="col-sm-10 col-sm-offset-1 mt20">
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>模块编码：</label>
+              <div class="col-sm-6">
+               atton 
+              </div>
+            </div><!--form-group end-->
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>模块名称：</label>
+              <div class="col-sm-6">
+               参会模块
+              </div>
+            </div><!--form-group end-->
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>是否使用：</label>
+             <div class="col-sm-7 pt6">
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadio1" value="option1" name="radioInline" >
+                                        <label for="inlineRadio1"> 否</label>
+                                    </div>
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadio2" value="option2" name="radioInline" checked="">
+                                        <label for="inlineRadio2"> 是 </label>
+                                    </div>
+                                     <small class="mes"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;是否使用该模板</small>
+                      </div>
+            </div><!--form-group end-->
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>是否可见：</label>
+             <div class="col-sm-7 pt6">
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadio3" value="option1" name="radioInline1" >
+                                        <label for="inlineRadio3"> 否</label>
+                                    </div>
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadio4" value="option2" name="radioInline1" checked="">
+                                        <label for="inlineRadio4"> 是 </label>
+                                    </div>
+                                     <small class="mes"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;模块是否在会议管理中可见</small>
+                      </div>
+            </div><!--form-group end-->
+
+             <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>是否显示帮助信息：</label>
+             <div class="col-sm-7 pt6">
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadio5" value="option1" name="radioInline2" checked="">
+                                        <label for="inlineRadio5"> 否</label>
+                                    </div>
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadio6" value="option2" name="radioInline2" >
+                                        <label for="inlineRadio6"> 是 </label>
+                                    </div>
+                      </div>
+            </div><!--form-group end-->
+
+             <div class="form-group clearfix">
+              <label class="col-sm-2 control-label">模块实体个数：</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="text" value="1" >
+                <span class="help-block m-b-none">单一模块实体个数0未不限制个数</span>
+              </div>
+            </div><!--form-group end-->
+
+          </div>
+         
+            <div class="col-sm-10 col-sm-offset-1 mt40">
+                           <label class="col-sm-2">&nbsp;</label>
+              <div class="col-sm-6">
+               <button class="btn btn-primary" type="submit" onClick="javascript:window.location.href='会议模块管理.html'">&nbsp;&nbsp;&nbsp;确定&nbsp;&nbsp;&nbsp;</button>
+                <button class="btn btn-white" type="submit" onClick="javascript:window.location.href='会议模块管理.html'">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+              </div>        
+                                </div>
+       
+        </div>
+      </div>
+      <!--ibox end-->
+ 
+    </div>
+    <!--col-sm-12 end--> 
+    
+  </div>
+  <!--row end--> 
+</div>
+<!--wrapper end--> 
+
+<div class="modal inmodal fade" id="myModal6" tabindex="-1" role="dialog"  aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">窗口标题</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>是否维护数据字典名目？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a type="button" class="btn btn-white"  href="字典管理.html" target="iframe0">取消</a>
+                                            <a type="button" class="btn btn-primary">继续</a>
+                                        </div>
+                                    </div>
+                                </div>
+</div>
+
+<script src="../js/jquery.min.js?v=2.1.4"></script> 
+<script src="../js/bootstrap.min.js?v=3.3.5"></script> 
+<script src="../js/plugins/datapicker/jquery.datetimepicker.js"></script>
+<script src="../js/plugins/iCheck/icheck.min.js"></script>
+<!--<script src="../js/demo/form-advanced-demo.min.js"></script>-->
+
+<script type="text/javascript">
+$('#datetimepicker').datetimepicker();
+$('#datetimepicker2').datetimepicker();
+
+</script>
+
+
+</body>
+</html>

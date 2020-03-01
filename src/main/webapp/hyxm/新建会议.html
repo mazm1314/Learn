@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="../css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+<link href="../css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
+<link href="../css/animate.min.css" rel="stylesheet">
+<link href="../css/layout.css?v=1.0.0" rel="stylesheet">
+<link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
+<link href="../css/plugins/dataTables/jquery.dataTables.css" rel="stylesheet">
+<link href="../css/plugins/datapicker/jquery.datetimepicker.css" rel="stylesheet">
+<link href="../css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+<link href="../css/plugins/searchableSelect/jquery.searchableSelect.css" rel="stylesheet">
+
+
+<script language="javascript">
+var now=new Date();
+document.write("今天是"+now.year()+"年"+now.month()+"月"+now.day()+“日”);
+</script>
+
+
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="location clearfix">
+  <p class="pull-left"><i class="fa fa-map-marker"></i> 新建会议</p>
+    
+  </div>
+  <!--location end-->
+  
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="ibox float-e-margins new_add_box">
+        <div class="ibox-content clearfix">
+          <div class="col-sm-10 col-sm-offset-1 mt20">
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>客户：</label>
+              <div class="col-sm-6">
+                <select name="customer" id="customerSelector" class="form-control">
+								<option value=""></option>
+								<option value="1">北京市延庆县人民政府</option>
+								<option value="2">中青旅会展</option>
+								<option value="3">大兴区世界月季洲际大会执委会</option>
+								<option value="4">中国畜牧兽医学会</option>
+								<option value="5">农业大学</option>
+								<option value="6">中青旅会展</option>
+								<option value="7">中华医学会</option>
+								<option value="8">辉瑞中国</option>
+								<option value="9">本溪市政府</option>
+								<option value="10">南京市台办</option>
+								<option value="11">深圳市医学会心血管病专业委员会</option>
+								<option value="12">米其林</option>
+								<option value="13">爱德思</option>
+								<option value="14">安利Amway</option>
+								<option value="15">中国生理学会（CAPS）</option>
+								<option value="16">康宝莱</option>
+								<option value="17">中国控制吸烟协会</option>
+								<option value="18">国家卫生计生委国际交流与合作中心</option>
+								</select>
+              </div>
+            </div><!--form-group end-->
+			 <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>会议类型：</label>
+              <div class="col-sm-6">
+                   <select name="customer" id="meetingtype" class="form-control">
+				                <option value=""></option>
+								<option value="1">医学会</option>
+								<option value="2">学术会</option>
+								<option value="3">非学术会</option>
+								</select>
+
+              </div>
+            </div><!--form-group end-->
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>会议名称：</label>
+              <div class="col-sm-6">
+                <input type="test" class="form-control" name="title" >
+              </div>
+            </div><!--form-group end-->
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>会议简称：</label>
+              <div class="col-sm-6">
+                <input type="test" class="form-control" name="password" >
+              </div>
+            </div><!--form-group end-->
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>会议简码：</label>
+              <div class="col-sm-6">
+                <input type="test" class="form-control" name="password" placeholder="会议访问标识" >
+              </div>
+            </div><!--form-group end-->
+
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>举办时间：</label>
+              <div class="col-sm-6">
+                <div class="input-daterange input-group" >
+                                <input type="text" class="form-control" name="start" value="" id="datetimepicker">
+                                <span class="input-group-addon" style="background:#EDEDED">到</span>
+                                <input type="text" class="form-control" name="end" value=""  id="datetimepicker2">
+                            </div>
+              </div>
+            </div><!--form-group end-->
+            
+            
+            
+             <div class="form-group clearfix" >
+              <label class="col-sm-2 control-label"><em class="must">*</em>举办城市类型：</label>
+             <div class="col-sm-7 pt6">
+
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadio8"   name="radioInline00" checked="" >
+                                        <label for="inlineRadio8"> 国内 </label>
+                                    </div>  
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadio9"   name="radioInline00" >
+                                        <label for="inlineRadio9"> 国际 </label>
+                                    </div>   
+			 
+			 </div>
+
+<div class="col-sm-6"  id="abcde">
+                <div class="input-daterange input-group" id="abcde">
+                        
+                               <select name="city"  class="form-control" >
+							                 <option>--省份--</option>
+                                    <option value="bj"  >河北</option>
+									<option value="bj"  >山东</option>
+									<option value="bj"  >四川</option>
+                                </select>
+                               
+                                <span class="input-group-addon pr0" style="border:none"  >&nbsp;</span>
+                               <select name="city"  class="form-control"  >
+
+                                   <option>--城市--</option>
+                                    <option value="bj"  >石家庄</option>
+									<option value="bj"  >济南</option>
+									<option value="bj"  >成都</option>
+                                </select>
+                      </div></br>  </div>
+<div class="col-sm-6"  id="fghij" style="display: none;">                           
+                                   <div class="input-daterange input-group" >
+                               <span class="input-group-addon pr0" style="border:none" >&nbsp;</span>
+                               <select name="city"  class="form-control"  >
+                                              <option>--大洲--</option> 
+                                    <option value="bj"  >北美洲</option>
+									<option value="bj"  >欧洲</option>
+									<option value="bj"  >亚洲</option>
+                                </select> 
+
+                                <span class="input-group-addon pr0" style="border:none" >&nbsp;</span>
+                               <select name="city"  class="form-control">
+							               <option>--国家--</option>
+                                    <option value="bj"  >美国</option>
+									<option value="bj"  >法国</option>
+									<option value="bj"  >韩国</option>
+                                </select>
+                               
+                                <span class="input-group-addon pr0" style="border:none" >&nbsp;</span>
+                               <select name="city"  class="form-control"  >
+							                   <option>--州/省--</option>
+                                    <option value="bj"  >加利福尼亚州</option>
+									<option value="bj"  >巴黎</option>
+									<option value="bj"  >首尔</option>
+                                </select>
+          </div>                    </div>
+			                                                                            
+            </div>
+  
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label">举办地点：</label>
+              <div class="col-sm-6">
+                <input type="test" class="form-control" name="password" >
+              </div>
+            </div><!--form-group end-->
+
+
+
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label">详细地址：</label>
+              <div class="col-sm-6">
+                <input type="test" class="form-control" name="password" >
+              </div>
+            </div><!--form-group end-->
+
+
+            <div class="form-inline clearfix">
+              <label class="col-sm-2 control-label">网址：</label>
+              <div class="col-sm-6"><div class="checkbox checkbox-success">
+                                        <input id="checkbox_web" name="checkbox_web" type="checkbox">
+                                        <label for="checkbox_web">
+                                            开启会议新域名
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success" >
+                                    	
+                                        <input id="checkbox_web1" name="checkbox_web" type="checkbox">
+                                        <label for="checkbox_web1" >
+                                            开启二级域名
+                                        </label>
+                                    </div><br />
+                                    
+                                    
+                               
+                <input type="test" id="input_web" class="form-control" name="password" value=" " disabled><br /><br />
+                 <div class="checkbox checkbox-info checkbox-inline" id="inlineCheckbox50"style="display: none;">     
+                	                <input type="test" id="input_web" class="form-control" name="password" value=" " >.orgs
+              </div></div>
+            </div><!--form-group end-->
+
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label">会议语言：</label>
+             <div class="col-sm-10 pt6">
+            <div class="checkbox checkbox-info checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1" checked="">
+                                        <label for="inlineCheckbox1"> 中文 </label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox2" value="option2" checked="">
+                                        <label for="inlineCheckbox2"> 英文 </label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox3" value="option3" >
+                                        <label for="inlineCheckbox3"> 法文 </label>
+                                    </div> 
+                                    
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox4" value="option4" >
+                                        <label for="inlineCheckbox4"> 西班牙文 </label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox7" value="option7" >
+                                        <label for="inlineCheckbox7"> 俄文 </label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox8" value="option8" >
+                                        <label for="inlineCheckbox8"> 阿拉伯文 </label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox9" value="option9" >
+                                        <label for="inlineCheckbox9"> 繁体 </label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox10" value="option10" >
+                                        <label for="inlineCheckbox10"> 日文 </label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox11" value="option11" >
+                                        <label for="inlineCheckbox11"> 韩文 </label>
+                                    </div> 
+                                    <!--<button class="btn btn-info btn-xs"  >&nbsp;&nbsp;<i class="fa fa-plus-square-o"></i>&nbsp;&nbsp;新增会议语言&nbsp;&nbsp;</button>-->
+                                    
+                                    
+                                                                      			</div>
+            </div><!--form-group end-->
+
+
+ 
+
+
+ 
+
+
+            <div class="form-group clearfix">
+              <label class="col-sm-2 control-label">会议主题：</label>
+              <div class="col-sm-8">
+                <div class="theme_box clearfix">
+                <li class="item"><span class="icon_right"><i class="fa fa-check-square"></i></span><img src="../img/theme01.jpg" width="120" height="90"  alt=""/><p>默认模板</p></li>
+                <li class="item"><span class="icon_right"><i class="fa fa-check-square"></i></span><img src="../img/theme02.jpg" width="120" height="90"  alt=""/><p>标准模板</p></li>
+                <li class="item"><span class="icon_right"><i class="fa fa-check-square"></i></span><img src="../img/theme03.jpg" width="120" height="90"  alt=""/><p>大会模板</p></li>
+                <li class="item"><span class="icon_right"><i class="fa fa-check-square"></i></span><img src="../img/theme04.jpg" width="120" height="90"  alt=""/><p>商务模板</p></li>
+                <li class="item"><span class="icon_right"><i class="fa fa-check-square"></i></span><img src="../img/theme05.jpg" width="120" height="90"  alt=""/><p>医药类模板</p></li>
+                <li class="item"><span class="icon_right"><i class="fa fa-check-square"></i></span><img src="../img/theme06.jpg" width="120" height="90"  alt=""/><p>大客户模板</p></li>
+                
+                
+                
+                </div><!--theme_box end-->
+
+              </div>
+            </div><!--form-group end-->
+<div class="form-group clearfix">
+              <label class="col-sm-2 control-label">支付方式：</label>
+        <div class="col-sm-10 pt6">
+			 <div >
+			      境内信用卡储蓄卡支付&nbsp; &nbsp;&nbsp;&nbsp;          
+            <div class="checkbox checkbox-info checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox12" value="option12" checked="">
+                                        <label for="inlineCheckbox12">首信易内卡支付 </label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox13" value="option13" checked="">
+                                        <label for="inlineCheckbox13">支付宝即时到账</label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox14" value="option14" >
+                                        <label for="inlineCheckbox14">支付宝网银支付 </label>
+                                    </div> 
+									
+                     </div>
+					  <div>
+                        境外信用卡支付&nbsp;&nbsp;&nbsp;&nbsp; 
+				     <div class="checkbox checkbox-info checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox12" value="option12" checked="">
+                                        <label for="inlineCheckbox12">首信易国际卡支付 </label>
+                                    </div> 					               
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox15" value="option15" >
+                                        <label for="inlineCheckbox15">支付宝外卡支付  </label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox16" value="option16" >
+                                        <label for="inlineCheckbox16"> paypal支付</label>
+                                    </div> 
+						 </div>    
+           <div> 
+                    其他支付&nbsp;&nbsp;&nbsp;&nbsp;                      		
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox19" value="option19" >
+                                        <label for="inlineCheckbox19"> 银行汇款 </label>
+                                    </div> 
+            <div class="checkbox checkbox-info  checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox20" value="option20" >
+                                        <label for="inlineCheckbox20"> 现场支付 </label>
+                                    </div> 
+						</div>  
+                                    <!--<button class="btn btn-info btn-xs"  >&nbsp;&nbsp;<i class="fa fa-plus-square-o"></i>&nbsp;&nbsp;新增会议语言&nbsp;&nbsp;</button>-->
+    </div>
+            </div>
+           <!-- <div class="form-group clearfix tooltip_div">
+              <label class="col-sm-2 control-label">开启手机号码登录： <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="是否用手机号码作为用户名"></i></label>
+              <div class="col-sm-6 pt6">
+                <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadiod"  name="radioInline5" checked="">
+                                        <label for="inlineRadiod"> 否 </label>
+                                    </div>
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadioe" name="radioInline5"  >
+                                        <label for="inlineRadioe"> 是 </label>
+                                    </div>
+              </div>
+            </div>form-group end-->
+
+
+
+           <!-- <div class="form-group clearfix tooltip_div">
+              <label class="col-sm-2 control-label">开启email邮箱登录： <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="是否用email作为用户名"></i></label>
+              <div class="col-sm-6 pt6">
+                <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadiof"  name="radioInline6" checked="">
+                                        <label for="inlineRadiof"> 否 </label>
+                                    </div>
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadioj" name="radioInline6"  >
+                                        <label for="inlineRadioj"> 是 </label>
+                                    </div>
+              </div>
+            </div>form-group end-->
+
+
+
+            <!--<div class="form-group clearfix tooltip_div">
+              <label class="col-sm-2 control-label">访问权限控制：<i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="这里是提示内容"></i></label>
+              <div class="col-sm-6 pt6">
+                <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadioh"  name="radioInline7" checked="">
+                                        <label for="inlineRadioh"> 否 </label>
+                                    </div>
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadioi" name="radioInline7"  >
+                                        <label for="inlineRadioi"> 是 </label>
+                                    </div>
+              </div>
+            </div>form-group end-->
+
+
+            <!--<div class="form-group clearfix tooltip_div">
+              <label class="col-sm-2 control-label">强制密码修改：<i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="访问权限控制选择"></i></label>
+              <div class="col-sm-6 pt6">
+                <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadiog"  name="radioInline8" checked="">
+                                        <label for="inlineRadiog"> 否 </label>
+                                    </div>
+            <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadiok" name="radioInline8"  >
+                                        <label for="inlineRadiok"> 是 </label>
+                                    </div>
+              </div>
+            </div>form-group end-->
+
+
+            <!--<div class="form-group clearfix">
+              <label class="col-sm-2 control-label"><em class="must">*</em>资源分组控制：</label>
+              <div class="col-sm-6">
+                <select name="customer" id="ddcustomerSelector" class="form-control">
+								<option value="">默认类型</option>
+								<option value="">默认类型</option>
+								</select>
+              </div>
+            </div>form-group end-->
+
+
+
+          </div>
+         
+         <div class="col-sm-10 col-sm-offset-1 mt40">
+                           <label class="col-sm-2">&nbsp;</label>
+              <div class="col-sm-6">
+               <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#myModal6" onClick="javascript:window.location.href='会议信息管理.html'">&nbsp;&nbsp;&nbsp;确定&nbsp;&nbsp;&nbsp;</button>
+                                    <button class="btn btn-white" type="submit" onClick="javascript:window.location.href='会议信息管理.html'">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+              </div>        
+                                </div>
+         
+         
+      
+        </div>
+      </div>
+      <!--ibox end-->
+      
+ 
+      
+    </div>
+    <!--col-sm-12 end--> 
+    
+  </div>
+  <!--row end--> 
+</div>
+<!--wrapper end--> 
+
+<div class="modal inmodal fade" id="myModal6" tabindex="-1" role="dialog"  aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">提示</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p><h4>是否开始会议的初始化？</h4></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                                            <button type="button" class="btn btn-primary"  onclick="javascript:window.location.href='会议配置管理.html'">继续</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+ 
+
+
+<script src="../js/jquery.min.js?v=2.1.4"></script> 
+<script src="../js/bootstrap.min.js?v=3.3.5"></script> 
+<script src="../js/plugins/peity/jquery.peity.min.js"></script> 
+<script src="../js/plugins/datapicker/jquery.datetimepicker.js"></script> 
+<script src="../js/content.min.js?v=1.0.0"></script> 
+<script src="../js/plugins/iCheck/icheck.min.js"></script> 
+<script src="../js/demo/peity-demo.min.js"></script> 
+<script src="../js/plugins/searchableSelect/jquery.searchableSelect.js"></script>
+<script src="../js/hplus.min.js?v=4.0.0"></script> 
+
+<script type="text/javascript">
+$('#datetimepicker').datetimepicker();
+$('#datetimepicker2').datetimepicker();
+
+$(".tooltip_div").tooltip({
+    selector: "[data-toggle=tooltip]",
+    container: "body"
+})
+$(".theme_box .item").eq(0).addClass("selected");
+$(".theme_box .item").click(function(){
+	if($(this).hasClass("selected")){
+		$(this).removeClass("selected");
+	}
+	else{
+		$(this).addClass("selected");
+	}
+	
+		});
+$('#customerSelector').searchableSelect();
+
+var vv = $('input[name=checkbox_web][checked]').val();
+//alert(vv);
+$("#checkbox_web").change(function(){
+			if(vv=true){
+			   $("#input_web").removeAttr("disabled");
+			}else
+		 		{
+			   $("#input_web").attr("disabled","disabled");
+			}
+			 
+
+});
+
+
+
+
+
+
+
+
+$("#inlineRadio8").click(function () {$("#abcde").show();$("#fghij").hide();});
+	$("#inlineRadio9").click(function () {$("#abcde").hide();$("#fghij").show();});
+</script>
+ 
+ 
+ 
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+</body>
+</html>

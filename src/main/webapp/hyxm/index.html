@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<title>PCO综合管理系统</title>
+<link href="../css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+<link href="../css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<link href="../css/animate.min.css" rel="stylesheet">
+<link href="../css/layout.css?v=1.0.0" rel="stylesheet">
+<link rel="Shortcut Icon" href="../favicon.ico" />
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+<div id="wrapper"> 
+  <!--左侧导航开始-->
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="nav-close"><i class="fa fa-times-circle"></i> </div>
+    <div class="sidebar-collapse">
+      <ul class="nav" id="side-menu">
+        <li class="nav-header">
+          <h3 class="fff profile-element"><strong style="font-size:20px; color:#FFAF00">PCO综合管理系统</strong></h3>
+          <div class="logo-element" style="color:#FFAF00">PCO </div>
+        </li>
+          <li class="active"> <a href="#"> <i class="fa fa-building-o"></i> <span class="nav-label">会议管理</span> <span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+              <li> <a class="J_menuItem" href="会议信息管理.html" data-index="0" target="iframe0">会议信息管理</a> </li>             
+             </ul>
+          </li>
+          <li> <a href="#"> <i class="fa fa-users"></i> <span class="nav-label">客户管理</span> <span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+              <li> <a class="J_menuItem" href="客户信息.html" data-index="0" target="iframe0">客户信息</a> </li>
+              <li> <a class="J_menuItem" href="联系人信息.html" data-index="0" target="iframe0">联系人信息</a> </li>
+            </ul>
+          </li>
+          
+          <li> <a href="#"> <i class="fa fa-sitemap"></i> <span class="nav-label">会议权限管理</span> <span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+              <li> <a class="J_menuItem" href="会议管理员管理.html" data-index="0" target="iframe0">会议管理员管理</a> </li>
+              <li> <a class="J_menuItem" href="会议角色管理.html" data-index="0" target="iframe0">会议角色管理</a> </li>
+            </ul>
+          </li>
+   
+      </ul>
+    </div>
+  </nav>
+  <!--左侧导航结束--> 
+  <!--右侧部分开始-->
+  <div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a> </div>
+          <ul class="nav navbar-main-links navbar-left ml20">
+            <li class="active"> <a  class="J_menuItem" data-index="0">会议项目管理</a> </li>           
+          </ul>
+        <ul class="nav navbar-top-links navbar-right">
+           
+          <li> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <span class="text-muted text-xs block"><i class="fa fa-user"></i> 超级管理员<b class="caret"></b></span> </a>
+            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+              <li><a class="J_menuItem" href="../wdxx/我的信息.html" target="iframe0">个人资料</a> </li>
+              <li><a class="J_menuItem" href="../wdxx/密码修改.html" target="iframe0">修改密码</a> </li>
+            </ul>
+          </li>
+          <li> <a href="../login.html" class="J_menuItem" data-index="0"><i class="fa fa-sign-out"></i> 退出</a> </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="row J_mainContent" id="content-main">
+      <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="会议信息管理.html" frameborder="0" data-id="会议信息管理.html" seamless></iframe>
+    </div>
+  </div>
+  <!--右侧部分结束--> 
+  
+</div>
+<script src="../js/jquery.min.js?v=2.1.4"></script> 
+<script src="../js/bootstrap.min.js?v=3.3.5"></script> 
+<script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script> 
+<script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script> 
+<script src="../js/plugins/layer/layer.min.js"></script> 
+<script src="../js/hplus.min.js?v=4.0.0"></script> 
+<script src="../js/plugins/pace/pace.min.js"></script>
+</body>
+</html>
